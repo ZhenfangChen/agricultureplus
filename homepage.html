@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Mapbox JS/CSS -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homepage.css" type="text/css">
+    <link rel="stylesheet" href="timeline.css" type="text/css">
+
+
+    <title>Homepage WIP</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-wrapper">
+        <div class="navigation-left">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">AGRICULTURE +</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contribution</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Record
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">One Month</a>
+                    <a class="dropdown-item" href="#">Three Month</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Six Month</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Share</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="navigation-right">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="slogan-area">
+    	<h1>AGRICULTURE +</h1><br><h2>THE LARGEST LANDSCAPE</h2>
+    </div>
+
+    <div class="map-wrapper">
+    	<a class="fullscreen-btn" href="javascript:void(0);"><img src="fullscreen_btn.svg"></a>
+    	<div class="map_container mapboxgl-map" style="height: 715px;">
+      		<div id="map">
+      		</div>
+      	</div>
+      	<a href="javascript:void(0);" class="scroll-down-btn">
+        	<svg width="55px" height="55px" viewBox="0 0 54 54">
+            	<g>
+                	<circle id="Oval-2" stroke="#797979" fill="#1A0A00" cx="27" cy="27" r="26"></circle>
+                  	<polyline id="Path-6" stroke="#979797" points="13 22 26 34.5 39.25 22"></polyline>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <div class="agriculture-technology">
+    	<h1>AGRICULTURE & TECHNOLOGY</h1><h2>HIGHLY RELY ON MECHANIZATION & BIOTECHNOLOGY</h2>
+    </div>
+
+
+	<div class="timeline">
+		<section class="cd-horizontal-timeline loaded">
+			<div class="timeline">
+				<div class="events-wrapper">
+					<div class="events" style="width: 1800px;">
+						<ol>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="16/01/2014" class="older-event" style="left: 120px;">Prior to 1850</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="28/02/2014" style="left: 300px;" class="older-event">1850</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="20/04/2014" style="left: 480px;" class="selected">1884</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="20/05/2014" style="left: 600px;">1886</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="09/07/2014" style="left: 780px;">1911</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="30/08/2014" style="left: 960px;">1919</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="15/09/2014" style="left: 1020px;">1930</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="01/11/2014" style="left: 1200px;">1950</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="10/12/2014" style="left: 1380px;">1970</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="19/01/2015" style="left: 1500px;">1990</a></li>
+							<li><a href="https://elm5bc.github.io/Bhalswa/#0" data-date="03/03/2015" style="left: 1680px;">Present</a></li>
+						</ol>
+
+						<span class="filling-line" aria-hidden="true" style="transform: scaleX(0.278222);"></span>
+					</div> <!-- .events -->
+				</div> <!-- .events-wrapper -->
+
+				<ul class="cd-timeline-navigation">
+					<li><a href="https://elm5bc.github.io/Bhalswa/#0" class="prev inactive">Prev</a></li>
+					<li><a href="https://elm5bc.github.io/Bhalswa/#0" class="next">Next</a></li>
+				</ul> <!-- .cd-timeline-navigation -->
+			</div> <!-- .timeline -->
+
+			<div class="events-content" style="height: 202.4px;">
+				<ol>
+					<li class="" data-date="16/01/2014">
+						<h2>Wetlands</h2>
+						<em>Prior to 1850</em>
+						<p>	
+							Prior to the Gold Rush of the mid-1800s, the Central Valley of California contained more than 4 million acres of wetlands and supported over 20 million waterfowl during fall and winter.
+						</p>
+					</li>
+
+					<li data-date="28/02/2014" class="">
+						<h2>Emergence of Chinese Labors</h2>
+						<em>1850</em>
+						<p>	
+							During the California Gold Rush, the labor of Chinese immigrants was exploited by the mining and agricultural concerns. Farmers who failed in their quest to find a fortune in gold soon learned that there were opportunities to make a living doing what they did back home — growing crops to feed a growing population.
+						</p>
+					</li>
+
+					<li data-date="20/04/2014" class="selected">
+						<h2>The Labor Shortage</h2>
+						<em>1884</em>
+						<p>	
+							The Chinese exclusion law of 1884 created a labor shortage, especially for agriculture. Japanese immigrants were brought in to fill the labor gap.
+						</p>
+					</li>
+
+					<li data-date="20/05/2014">
+						<h2>Farming Industry</h2>
+						<em>1886</em>
+						<p>	
+							Farming became a large-scale industry. The U.S. began importing Asian labor as African Americans moved into
+							other industries and as the need for labor increased. By 1886, 7 out of every 8 farm workers were Chinese. 
+						</p>
+					</li>
+
+					<li data-date="09/07/2014">
+						<h2>The Beginning of Commercial Rice</h2>
+						<em>1911</em>
+						<p>	
+							Subsequently, rice was grown successfully in two different areas in the Sacramento Valley in 1911. These plantings marked the beginning of the commercial rice production in California
+						</p>
+					</li>
+
+					<li data-date="30/08/2014">
+						<h2>Flooding</h2>
+						<em>1919</em>
+						<p>	
+							1919 heavy rain brought heavy flooding and million dollar damages to many of the Japanese rice-farming pioneers, they lost their investments and life savings in this disaster.
+						</p>
+					</li>
+
+					<li data-date="15/09/2014">
+						<h2>Rice Farming Technology Improvement</h2>
+						<em>1930</em>
+						<p>	
+							Start from 1930s, rice farming has witnessed a great improvement in technology. The rice agriculture became more mechanized.Growers began using combine harvesters for swathed rice, followed by new types of techniques including chemical fertilizers, aerial seeding.Since 1950s, most combines were self-propelled and operated by a single person.
+						</p>
+					</li>
+
+					<li data-date="01/11/2014">
+						<h2>Rice Dryer</h2>
+						<em>1950</em>
+						<p>	
+							By 1950, most rice was direct combined and dried with a heated-air dryer.
+					</p></li>
+
+					<li data-date="10/12/2014">
+						<h2>Water-use Efficiency Technology</h2>
+						<em>1970</em>
+						<p>	
+							During the 1970s, laser-guided leveling was introduced, resulting in the change from contour levees to parallel levees, improving water-use efficiency. Problems with offsite movement of herbicides from rice fields into the Sacramento River prompted the industry to develop practices to manage herbicide residues in rice field drain waters.
+						</p>
+					</li>
+
+					<li data-date="19/01/2015">
+						<h2>Pollution Control</h2>
+						<em>1990</em>
+						<p>	
+							During the 1990s, recirculating and static-water irrigation systems were introduced to further reduce off-site pesticide movement. Growers have become experts at holding water and eliminating drainage after a pesticide application. Air quality concerns led to the introduction of state laws restricting straw burning. As a result, growers started incorporating straw residues in the fall after harvest, followed by flooding of fields during the winter to encourage straw decomposition.
+						</p>
+					</li>
+
+					<li data-date="03/03/2015">
+						<h2>Labor Shortage</h2>
+						<em>Present</em>
+						<p>	
+							As African Americans moved to other industries, there was a shortage of labor in the fields. Immigrants, primarily from Latin America, began to work in the fields. 
+						</p>
+					</li>
+				</ol>
+			</div> <!-- .events-content -->
+		</section>
+	</div>
+
+	<div class="timeline-img-wrapper">
+		<img src="timeline.jpg">
+	</div>
+
+	<div class="agriculture-interventions">
+		<h1>AGRICULTURE & INTERVENTIONS</h1>
+		<h2>RETHINKING AGRICULTURAL WATER FOOTPRINTS:</h2>
+		<h5>RE-DISTRIBUTE WATER FOR MULTIPLE FUNCTIONS THROUGH THE USE OF INNOVATIVE TECHNOLOGIES</h5>
+	</div>
+
+	<div class="three-lenses-wrapper">
+		<img src="three-lenses.jpg">
+	</div>
+
+	<div class="water-collection-lense-wrapper">
+		<h2>WATER COLLECTION</h2>
+		<h5>RAINWATER COLLECTORS & FOG CATCHER</h5>
+		<br>
+		<div class="water-collection-img-wrapper">
+			<img src="water-collection-1.jpg">			
+		</div>
+	</div>
+
+	
+
+
+
+
+
+
+  </body>
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script src="homepage.js"></script>
+    <script src="map.js"></script>
+    <script src="util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  	<script src="swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+ 	<script src="main.js"></script>
+</html>

@@ -1,90 +1,106 @@
 body {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  height: 60px;
+}
 .header-wrapper {
-	background-color: #e3a925;
-	height: 50px;
+  background-color: #e3a925;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
 }
 
 .navigation-left {
-	position: fixed;
-	top: 0;
-	left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navigation-right {
-	position: fixed;
-	top: 10px;
-	right: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 .scroll-down {
-	width: 2rem;
-	position: relative;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	transform: translateX(-50%);
+  width: 2rem;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-50%);
 }
 
 .slogan-area {
-	text-align: center;
+  text-align: center;
 }
 
-.map-wrapper{
-	position: relative;
-    max-width: 2000px;
-    width: 85%;
-    margin: 0 auto;
-} 
+.map-wrapper {
+  position: relative;
+  max-width: 2000px;
+  width: 85%;
+  margin: 0 auto;
+}
 
-.fullscreen-btn{
-	position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 98;
+.fullscreen-btn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 98;
 }
 
 #map {
-position: relative;
-height: 715px;
+  position: relative;
+  height: calc(100vh - 250px);
 }
 
 .agriculture-technology {
-	text-align: center;
+  text-align: center;
 }
 
 .timeline-img-wrapper {
-	text-align: center;
+  text-align: center;
 }
-
 .timeline-img-wrapper img {
-	width: 80%;
+  width: 80%;
+}
+.scroll-down-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 99;
+}
+.map_container {
+  overflow: visible;
+  margin-bottom: 50px;
 }
 
 .agriculture-interventions {
-	text-align: center;
-	margin: 0px;
+  text-align: center;
+  margin: 0px;
 }
 
 .three-lenses-wrapper {
-	text-align: center;
+  text-align: center;
 }
 
 .three-lenses-wrapper img {
-	width: 80%;
+  width: 80%;
 }
 
 .water-collection-lense-wrapper {
-	text-align: center;
+  text-align: center;
 }
 
 .water-collection-lense-wrapper {
-	text-align: center;
+  text-align: center;
 }
 
 .water-collection-lense-wrapper img {
-	width: 80%;
+  width: 80%;
 }

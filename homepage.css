@@ -1,12 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-header {
+/*header {
   height: 60px;
-}
-.header-wrapper {
+}*/
+
+/*.header-wrapper {
   background-color: #e3a925;
   height: 60px;
   width: 100%;
@@ -24,83 +25,280 @@ header {
   position: fixed;
   top: 10px;
   right: 10px;
-}
+}*/
 
 .scroll-down {
-  width: 2rem;
-  position: relative;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  transform: translateX(-50%);
+    width: 2rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-50%);
 }
 
 .slogan-area {
-  text-align: center;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.slogan-area-landscape-plus h1 {
+    font-size: 144px;
+}
+
+.slogan-area-landscape-plus h2 {
+    font-size: 72px;
 }
 
 .map-wrapper {
-  position: relative;
-  max-width: 2000px;
-  width: 85%;
-  margin: 0 auto;
+    position: relative;
+    max-width: 2000px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .fullscreen-btn {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: 98;
+    position: relative;
+    top: 28px;
+    left: -17px;
+    z-index: 9999;
+    width: 2rem;
+    height: 2rem;
+}
+
+.fullscreen-btn img {
+    position: relative;
+    top: 10px;
+    z-index: 9999;
+    width: 2rem;
+    height: 2rem;
 }
 
 #map {
-  position: relative;
-  height: calc(100vh - 250px);
+    position: relative;
+    height: calc(100vh - 250px);
+}
+
+.water-system-technology-break {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.water-system-technology-break img {
+    width: 80%;
 }
 
 .agriculture-technology {
-  text-align: center;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
 }
 
 .timeline-img-wrapper {
-  text-align: center;
+    text-align: center;
 }
+
 .timeline-img-wrapper img {
-  width: 80%;
+    width: 80%;
 }
+
 .scroll-down-btn {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 99;
 }
+
 .map_container {
-  overflow: visible;
-  margin-bottom: 50px;
+    overflow: visible;
+    margin-bottom: 50px;
 }
 
 .agriculture-interventions {
-  text-align: center;
-  margin: 0px;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.technology-interventions-break {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.technology-interventions-break img {
+    width: 80%;
 }
 
 .three-lenses-wrapper {
-  text-align: center;
+    text-align: left;
 }
 
 .three-lenses-wrapper img {
-  width: 80%;
+    width: 100%;
 }
 
 .water-collection-lense-wrapper {
-  text-align: center;
-}
-
-.water-collection-lense-wrapper {
-  text-align: center;
+    text-align: left;
 }
 
 .water-collection-lense-wrapper img {
+    width: 100%;
+}
+
+.irrigation-lense-wrapper {
+    text-align: left;
+}
+
+.irrigation-lense-wrapper img {
+    width: 100%;
+}
+
+.treatment-and-downstream-habitat-lense-wrapper {
+    text-align: left;
+}
+
+.treatment-and-downstream-habitat-lense-wrapper img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.scrolling-navbar {
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #e3a925;
+}
+
+footer.page-footer {
+    background-color: #e3a925;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #e3a925;
+    }
+}
+
+.map-landscape-break {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.map-landscape-break img {
+    width: 80%;
+}
+
+.agriculture-landscape {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.agriculture-landscape-img-wrapper {
+    text-align: center;
+}
+
+.agriculture-landscape-img-wrapper img {
+    width: 80%;
+}
+
+.landscape-water-system-break {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.landscape-water-system-break img {
+    width: 80%;
+}
+
+.agriculture-water-system {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.agriculture-water-system-img-wrapper {
+    text-align: center;
+}
+
+.agriculture-water-system-img-wrapper img {
+    width: 80%;
+}
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-item video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.three-lenses-wrapper .col-4 h3,
+.three-lenses-wrapper .col-4 p {
+    cursor: pointer;
+}
+
+.three-lenses-wrapper .fixed {
+    position: fixed;
+    z-index: 3;
+    transform: translate3d(0px, 60px, 0px);
+    top: 0px;
+}
+/* .left */
+
+.interventions-statement-break {
+  margin: 100px 0 50px 0;
+  text-align: center;
+  padding: 0 auto;  
+}
+
+.interventions-statement-break img {
   width: 80%;
+}
+
+.statement {
+  text-align: center;
+  margin: 50px 0 50px 0;
+  padding: 0 10% 0 10%;
+}
+
+.bullet-points {
+  margin: 50px;
+  text-align: left;
+}
+
+.three-lenses-wrapper a {
+    color: #e3a925;
+}
+
+.three-lenses-wrapper a:hover {
+    color: #ba8b1f;
 }

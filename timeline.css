@@ -376,3 +376,11 @@
     transform: translateX(0%);
   }
 }
+
+ol li{
+  list-style:none;
+}
+
+ul li{
+  list-style:none;
+}

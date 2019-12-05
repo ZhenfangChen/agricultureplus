@@ -26,12 +26,15 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="homepage.css" type="text/css" />
     <link rel="stylesheet" href="timeline.css" type="text/css" />
+    <link rel="stylesheet" href="all.css" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="mdb.min.css" rel="stylesheet" />
 
     <title>Homepage WIP</title>
   </head>
 
   <body>
-    <header>
+<!--     <header>
       <div class="header-wrapper">
         <div class="navigation-left">
           <nav class="navbar navbar-expand-lg navbar-light">
@@ -99,17 +102,214 @@
           </form>
         </div>
       </div>
+    </header> -->
+
+
+	
+    <header>
+    <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand"><font color="#e3a925">AGRICULTURE +</font></a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link waves-effect waves-light" href="#">Home
+                  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#map">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#landscape">Landscape</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#water-system">Water System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#technology">Technology</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Interventions</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item waves-effect waves-light" href="#three-lenses">Three Lenses</a>
+                <a class="dropdown-item waves-effect waves-light" href="#water-collection">Water Collection</a>
+                <a class="dropdown-item waves-effect waves-light" href="#irrigation">Irrigation</a>
+                <a class="dropdown-item waves-effect waves-light" href="#treatment-and-downstream-habitat">Treatment and Downstream Habitat</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#statement">Statement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="mailto:zc8hs@virginia.edu">Contact</a>
+            </li>
+          </ul>
+          <!-- Links -->
+
+          <!-- <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form> -->
+        </div>
+        <!-- Collapsible content -->
+
+      </nav>
+      <!--/.Navbar-->
     </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	<!--Carousel Wrapper-->
+  	<div id="video-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  	  <!--Indicators-->
+  	  <ol class="carousel-indicators">
+  	    <li data-target="#video-carousel" data-slide-to="0" class="active"></li>
+  	    <li data-target="#video-carousel" data-slide-to="1"></li>
+  	    <li data-target="#video-carousel" data-slide-to="2"></li>
+  	  </ol>
+  	  <!--/.Indicators-->
+  	  <!--Slides-->
+  	  <div class="carousel-inner" role="listbox">
+  	    <!-- First slide -->
+  	    <div class="carousel-item active">
+  	      <!--Mask color-->
+  	      <div class="view">
+  	        <!--Video source-->
+  	        <video class="video-fluid" autoplay loop muted>
+  	          <source src="field-condition-change.mp4" type="video/mp4" />
+  	        </video>
+  	        <div class="mask rgba-indigo-light"></div>
+  	      </div>
+
+  	      <!--Caption-->
+  	      <div class="carousel-caption">
+  	        <div class="animated fadeInDown">
+  	          <h3 class="h3-responsive">Future Field Pattern Shifting</h3>
+  	          <p>In the future, an integrated greenspace network that merges agricultural, ecological, and urban green infrastructure will be created. Even though Agriculture+ applies its strategies systematically, the future landscape will have varied results.</p>
+  	        </div>
+  	      </div>
+  	      <!--Caption-->
+  	    </div>
+  	    <!-- /.First slide -->
+
+  	    <!-- Second slide -->
+  	    <div class="carousel-item">
+  	      <!--Mask color-->
+  	      <div class="view">
+  	        <!--Video source-->
+  	        <video class="video-fluid" autoplay loop muted>
+  	          <source src="future-section.mp4" type="video/mp4" />
+  	        </video>
+  	        <div class="mask rgba-purple-slight"></div>
+  	      </div>
+
+  	      <!--Caption-->
+  	      <div class="carousel-caption">
+  	        <div class="animated fadeInDown">
+  	          <h3 class="h3-responsive">Post-agriculture Landscape</h3>
+  	          <p>In the “post-agriculture stage”. technological innovations cause water efficiency to be increased so much that existing infrastructure can be abandoned and turned into a new form of post-agrarian landscape. </p>
+  	        </div>
+  	      </div>
+  	      <!--Caption-->
+  	    </div>
+  	    <!-- /.Second slide -->
+
+  	    <!-- Third slide -->
+  	    <div class="carousel-item">
+  	      <!--Mask color-->
+  	      <div class="view">
+  	        <!--Video source-->
+  	        <video class="video-fluid" autoplay loop muted>
+  	          <source src="windbreak-simulation.mp4" type="video/mp4" />
+  	        </video>
+  	        <div class="mask rgba-black-strong"></div>
+  	      </div>
+
+  	      <!--Caption-->
+  	      <div class="carousel-caption">
+  	        <div class="animated fadeInDown">
+  	          <h3 class="h3-responsive">Windbreak Simulation</h3>
+  	          <p>To improve irrigation, newer, more efficient types of irrigation (modified center pivot), agro-technology processes (intercropping), and windbreaks are introduced. Together, these interventions will decrease water consumption and improve the efficiency of water delivery.</p>
+  	        </div>
+  	      </div>
+  	      <!--Caption-->
+  	    </div>
+  	    <!-- /.Third slide -->
+  	  </div>
+  	  <!--/.Slides-->
+  	  <!--Controls-->
+  	  <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
+  	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  	    <span class="sr-only">Previous</span>
+  	  </a>
+  	  <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
+  	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  	    <span class="sr-only">Next</span>
+  	  </a>
+  	  <!--/.Controls-->
+  	</div>
+  	<!--Carousel Wrapper-->
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="slogan-area">
-      <h1>AGRICULTURE +</h1>
-      <br />
-      <h2>THE LARGEST LANDSCAPE</h2>
+      <div class="slogan-area-landscape-plus">
+        <h1><font color="#e3a925">AGRICULTURE +</font></h1>
+        <h2>THE LARGEST LANDSCAPE</h2>
+      </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="map-wrapper">
       <a class="fullscreen-btn" href="javascript:void(0);"
-        ><img src="/treepedia/assets/fullscreen_btn.svg"
+        ><img src="fullscreen_btn.svg"
       /></a>
       <div class="map_container mapboxgl-map">
         <div id="map"></div>
@@ -135,10 +335,121 @@
       </div>
     </div>
 
-    <div class="agriculture-technology">
-      <h1>AGRICULTURE & TECHNOLOGY</h1>
-      <h2>HIGHLY RELY ON MECHANIZATION & BIOTECHNOLOGY</h2>
+
+
+
+
+
+    <div class="map-landscape-break">
+      <img src="line.svg">  
     </div>
+
+
+
+
+    <div class="agriculture-landscape" id="landscape">
+      <h1>AGRICULTURE & <font color="#e3a925">LANDSCAPE</font></h1>
+      <h3>MONOTONOUS LANDSCAPE, UNSUSTAINABLE ECOSYSTEM, LOW BIODIVERSITY</h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="agriculture-landscape-img-wrapper">
+      <img src="pattern-scale.jpg" />
+    </div>
+
+
+
+
+
+    <div class="landscape-water-system-break">
+      <img src="line.svg">
+    </div>
+
+
+
+
+    <div class="agriculture-water-system" id="water-system">
+      <h1>AGRICULTURE & <font color="#e3a925">WATER SYSTEM</font></h1>
+      <h3>LARGEST CONSUMER, LOW-VALUE, LOW-EFFICIENCY, HIGHLY SUBSIDIZED</h3>
+    </div>
+
+
+
+
+
+
+    <div class="agriculture-water-system-img-wrapper">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="atlas5.jpg">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="atlas6.jpg">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="atlas7.jpg">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="water-system-technology-break">
+      <img src="line.svg">
+    </div>
+
+
+
+
+
+
+
+    <div class="agriculture-technology" id="technology">
+      <h1>AGRICULTURE & <font color="#e3a925">TECHNOLOGY</font></h1>
+      <h3>HIGHLY RELY ON MECHANIZATION & BIOTECHNOLOGY</h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
     <div class="timeline">
       <section class="cd-horizontal-timeline loaded">
@@ -148,7 +459,7 @@
               <ol>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="16/01/2014"
                     class="older-event"
                     style="left: 120px;"
@@ -157,7 +468,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="28/02/2014"
                     style="left: 300px;"
                     class="older-event"
@@ -166,7 +477,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="20/04/2014"
                     style="left: 480px;"
                     class="selected"
@@ -175,7 +486,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="20/05/2014"
                     style="left: 600px;"
                     >1886</a
@@ -183,7 +494,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="09/07/2014"
                     style="left: 780px;"
                     >1911</a
@@ -191,7 +502,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="30/08/2014"
                     style="left: 960px;"
                     >1919</a
@@ -199,7 +510,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="15/09/2014"
                     style="left: 1020px;"
                     >1930</a
@@ -207,7 +518,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="01/11/2014"
                     style="left: 1200px;"
                     >1950</a
@@ -215,7 +526,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="10/12/2014"
                     style="left: 1380px;"
                     >1970</a
@@ -223,7 +534,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="19/01/2015"
                     style="left: 1500px;"
                     >1990</a
@@ -231,7 +542,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://elm5bc.github.io/Bhalswa/#0"
+                    href=""
                     data-date="03/03/2015"
                     style="left: 1680px;"
                     >Present</a
@@ -252,13 +563,13 @@
           <ul class="cd-timeline-navigation">
             <li>
               <a
-                href="https://elm5bc.github.io/Bhalswa/#0"
+                href=""
                 class="prev inactive"
                 >Prev</a
               >
             </li>
             <li>
-              <a href="https://elm5bc.github.io/Bhalswa/#0" class="next"
+              <a href="" class="next"
                 >Next</a
               >
             </li>
@@ -318,7 +629,7 @@
               <p>
                 Subsequently, rice was grown successfully in two different areas
                 in the Sacramento Valley in 1911. These plantings marked the
-                beginning of the commercial rice production in California
+                beginning of the commercial rice production in California.
               </p>
             </li>
 
@@ -338,9 +649,9 @@
               <p>
                 Start from 1930s, rice farming has witnessed a great improvement
                 in technology. The rice agriculture became more
-                mechanized.Growers began using combine harvesters for swathed
+                mechanized. Growers began using combine harvesters for swathed
                 rice, followed by new types of techniques including chemical
-                fertilizers, aerial seeding.Since 1950s, most combines were
+                fertilizers, aerial seeding. Since 1950s, most combines were
                 self-propelled and operated by a single person.
               </p>
             </li>
@@ -397,28 +708,292 @@
       </section>
     </div>
 
+
+
+
+
+
+
+
+
+
     <div class="timeline-img-wrapper">
       <img src="timeline.jpg" />
+      <img src="atlas10.jpg">
     </div>
+
+
+
+
+
+
+
+    <div class="technology-interventions-break">
+      <img src="line.svg">
+    </div>
+
+
+
+
+
+
 
     <div class="agriculture-interventions">
-    <h1>AGRICULTURE & INTERVENTIONS</h1>
-    <h2>RETHINKING AGRICULTURAL WATER FOOTPRINTS:</h2>
-    <h5>RE-DISTRIBUTE WATER FOR MULTIPLE FUNCTIONS THROUGH THE USE OF INNOVATIVE TECHNOLOGIES</h5>
-  </div>
+    	<h1>AGRICULTURE & <font color="#e3a925">INTERVENTIONS</font></h1>
+    	<h3>RE-DISTRIBUTE WATER FOR MULTIPLE FUNCTIONS THROUGH THE USE OF INNOVATIVE TECHNOLOGIES</h3>
+  	</div>
 
-  <div class="three-lenses-wrapper">
-    <img src="three-lenses.jpg">
-  </div>
 
-  <div class="water-collection-lense-wrapper">
-    <h2>WATER COLLECTION</h2>
-    <h5>RAINWATER COLLECTORS & FOG CATCHER</h5>
-    <br>
-    <div class="water-collection-img-wrapper">
-      <img src="water-collection-1.jpg">      
+
+
+
+
+
+
+    <div class="three-lenses-wrapper" id="three-lenses">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 left">
+            <div class="sticky-wrapper">
+
+              <a href="#three-lenses">
+                <h3>THREE LENSES</h3>
+              </a>
+              <br>
+              <a href="#rainwater-collector">
+                <h6>WATER <font color="#e3a925">COLLECTION</font></h6>
+              </a>
+              
+              <p>Rainwater Collector & Fog Catcher</p>
+              <br>
+              <a href="#irrigation">
+              <h6><font color="#e3a925">IRRIGATION</font></h6>
+              </a>
+              <p>High Efficient Irrigation & Agro-technologies</p>
+              <p>Windbreak</p>
+              <br>
+              <a href="#treatment-and-downstream-habitat">
+              <h6><font color="#e3a925">TREATMENT</font> AND <font color="#e3a925">DOWNSTREAM HABITAT</font></h6>
+              </a>
+              <p>Winter Flooded Rice Paddies</p>
+              <p>Buffer Areas & Tail-water Recycle Ponds</p>
+              <p>Reproposing Fallowland</p>
+            </div>
+          </div>
+          <div class="col-8 right">
+            <img src="three-lenses.jpg">
+            <img src="atlas30.jpg" id="water-collection">
+            <img src="atlas31.jpg">
+            <img src="atlas38.jpg" id="irrigation">
+            <img src="atlas39.jpg">
+            <img src="atlas21.jpg">
+            <img src="atlas42.jpg">
+            <img src="atlas43.jpg">
+            <img src="atlas48.jpg" id="treatment-and-downstream-habitat">
+            <img src="atlas49.jpg">
+            <img src="atlas51.jpg">
+            <img src="atlas54.jpg">
+            <img src="atlas55.jpg">
+            <img src="atlas58.jpg">
+            <img src="atlas59.jpg">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+
+    <!-- <div class="water-collection-lense-wrapper" id="water-collection">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>THREE LENSES</h3>
+            <br>
+            <h6>WATER <font color="#e3a925">COLLECTION</font></h6>
+            <p>Rainwater Collector & Fog Catcher</p>
+            <br>
+            <h6><font color="#e3a925">IRRIGATION</font></h6>
+            <p>High Efficient Irrigation & Agro-technologies</p>
+            <p>Windbreak</p>
+            <br>
+            <h6><font color="#e3a925">TREATMENT</font> AND <font color="#e3a925">DOWNSTREAM HABITAT</font></h6>
+            <p>Winter Flooded Rice Paddies</p>
+            <p>Buffer Areas & Tail-water Recycle Ponds</p>
+            <p>Reproposing Fallowland</p>
+          </div>
+          <div class="col-8">
+            <img src="atlas30.jpg">
+            <img src="atlas31.jpg">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="irrigation-lense-wrapper" id="irrigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            
+              <h3>THREE LENSES</h3>
+              <br>
+              <h6>WATER <font color="#e3a925">COLLECTION</font></h6>
+              <p>Rainwater Collector & Fog Catcher</p>
+              <br>
+              <h6><font color="#e3a925">IRRIGATION</font></h6>
+              <p>High Efficient Irrigation & Agro-technologies</p>
+              <p>Windbreak</p>
+              <br>
+              <h6><font color="#e3a925">TREATMENT</font> AND <font color="#e3a925">DOWNSTREAM HABITAT</font></h6>
+              <p>Winter Flooded Rice Paddies</p>
+              <p>Buffer Areas & Tail-water Recycle Ponds</p>
+              <p>Reproposing Fallowland</p>
+            
+          </div>
+          <div class="col-8">
+            <img src="atlas38.jpg">
+            <img src="atlas39.jpg">
+            <img src="atlas21.jpg">
+            <img src="atlas42.jpg">
+            <img src="atlas43.jpg">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="treatment-and-downstream-habitat-lense-wrapper" id="treatment-and-downstream-habitat">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>THREE LENSES</h3>
+            <br>
+            <h6>WATER <font color="#e3a925">COLLECTION</font></h6>
+            <p>Rainwater Collector & Fog Catcher</p>
+            <br>
+            <h6><font color="#e3a925">IRRIGATION</font></h6>
+            <p>High Efficient Irrigation & Agro-technologies</p>
+            <p>Windbreak</p>
+            <br>
+            <h6><font color="#e3a925">TREATMENT</font> AND <font color="#e3a925">DOWNSTREAM HABITAT</font></h6>
+            <p>Winter Flooded Rice Paddies</p>
+            <p>Buffer Areas & Tail-water Recycle Ponds</p>
+            <p>Reproposing Fallowland</p>
+          </div>
+          <div class="col-8">
+            <img src="atlas48.jpg">
+            <img src="atlas49.jpg">
+            <img src="atlas51.jpg">
+            <img src="atlas54.jpg">
+            <img src="atlas55.jpg">
+            <img src="atlas58.jpg">
+            <img src="atlas59.jpg">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+    <div class="interventions-statement-break">
+      <img src="line.svg">
+    </div>
+
+
+
+
+
+
+
+    <div class="statement" id="statement">
+      <h1><font color="#e3a925">Statement</font></h1>
+      <div class="bullet-points">
+        <h3>We believe that <font color="#e3a925">agriculture</font>, cohering with new ruralism and urbanism, has the potential to become the <font color="#e3a925">largest landscape medium</font>.</h3>
+        <br>
+        <h3>We believe that future agricultural landscapes should be <font color="#e3a925">economically maintained and ecologically functional</font>, controlled yet open-ended.</h3>
+        <br>
+        <h3>We believe in <font color="#e3a925">technology</font>, and that its development provides strong motivation for infrastructure to strive for more agency and more <font color="#e3a925">power to transform the landscape</font>.</h3>
+        <br>
+        <h3>We believe in the essential role <font color="#e3a925">biodiversity</font> plays in an ecologically fit territory, and we <font color="#e3a925">encourage a network of multi-species habitats</font>.</h3>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<!-- 	<div class="water-collection-lense-wrapper">
+		<h2>WATER COLLECTION</h2>
+	    <h5>RAINWATER COLLECTORS & FOG CATCHER</h5>
+	    <br>
+		<div class="water-collection-img-wrapper">
+	    	<img src="atlas16.jpg">      
+	    </div>
+	</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 
@@ -440,6 +1015,8 @@
   <script src="homepage.js"></script>
   <script src="map.js"></script>
   <script src="util.js"></script>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="mdb.min.js"></script>
   <!-- util functions included in the CodyHouse framework -->
   <script src="swipe-content.js"></script>
   <!-- A Vanilla JavaScript plugin to detect touch interactions -->
